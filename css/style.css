@@ -69,12 +69,6 @@ body {
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   top: 50%;
-  /* left: 50%;
-  padding: 10vmin; */
-  /* position: relative; */
-  /* text-align: center;
-  top: 50%; */
-  /* transform: translate(-50%, -50%); */
 }
 
 @keyframes slide {
@@ -89,10 +83,7 @@ body {
   display: flex;
   margin: 40px;
 }
-.image-containers {
-  display: flex;
-  margin: 60px;
-}
+
 /* end of animation */
 #main-hero-section {
   display: flex;
@@ -115,10 +106,7 @@ body {
   width: 60%;
   display: inline-block;
 }
-/* #main-hero-section a {
-  text-decoration: none;
-  color: rgb(68, 163, 223);
-} */
+
 #main-hero-section h2 {
   font-size: 1.6em;
   font-weight: 600;
@@ -133,13 +121,6 @@ body {
   font-weight: 400;
   width: 85%;
   text-align: center;
-}
-#main-hero-section p:nth-of-type(2) {
-  font-size: 0.9em;
-  margin-top: -10px;
-  font-weight: 400;
-  width: 59%;
-  opacity: 60%;
 }
 #main-hero-section div {
   display: flex;
@@ -187,6 +168,7 @@ body {
   margin-top: 0px;
   color: white;
   padding-top: 0px;
+  text-align: center;
 }
 .image-labels {
   font-size: 2.5em;
@@ -210,10 +192,11 @@ body {
   color: rgb(68, 163, 223);
 }
 #second-project-section {
-  background: url(placeHolder2Small.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  padding: 10px;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -222,23 +205,6 @@ body {
   position: relative;
   margin-top: 15px;
 }
-.taepercent {
-  text-decoration: underline;
-  font-weight: bold;
-  display: inline;
-}
-/* #first-project-section div,
-#second-project-section div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  width: 100%;
-} */
-/* .cubes {
-  display: none;
-} */
 
 @media screen and (min-width: 610px) {
   #menunav {
@@ -278,16 +244,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
   }
-  /* #main-hero-section div,
-  #first-project-section div,
-  #second-project-section div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    width: 100%;
-  } */
+
   .project-subtitles {
     font-size: 2em;
     color: black;
@@ -300,19 +257,6 @@ body {
     padding-bottom: 50px;
   }
 
-  /* #main-hero-section a,
-  #first-project-section a,
-  #second-project-section a {
-    font-weight: 400;
-    font-size: 1.1em;
-    opacity: 100%;
-  } */
-  /* #main-hero-section p:nth-of-type(2),
-  #first-project-section p:nth-of-type(1),
-  #second-project-section p:nth-of-type(1) {
-    font-size: 1.1em;
-    width: 85%;
-  } */
   #first-project-section {
     margin-top: 65px;
     height: auto;
@@ -321,18 +265,11 @@ body {
   }
   .link-button-containers {
     display: flex;
-    /* flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end; */
-    /* width: 25%; */
   }
   #second-project-section {
-    background: url(placeHolder2Large.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     margin-top: 25px;
-    height: 700px;
+    height: auto;
+    margin-bottom: 40px;
   }
   .project-hero-image-containers {
     display: flex;
@@ -343,6 +280,7 @@ body {
     gap: 50px;
     width: 100%;
   }
+
   .project-card-containers {
     display: flex;
     margin: 60px;
@@ -358,113 +296,62 @@ body {
   .project-titles {
     font-size: 3em;
   }
-  #project1-hero-image {
+  #project1-hero-images {
     border-radius: 8%;
     overflow: hidden;
-    width: 300px;
+    width: 40vh;
+    transition: transform 0.5s ease;
+  }
+  #project1-hero-images:hover {
+    transform: scale(1.25);
+  }
+  #project2-hero-images {
+    border-radius: 8%;
+    overflow: hidden;
+    width: 60vh;
+    transition: transform 0.5s ease;
+  }
+  #project2-hero-images:hover {
+    transform: scale(1.25);
   }
   #project1-wireframe-image {
     width: 90vh;
     border-radius: 10%;
+    transition: transform 0.5s ease;
   }
   #project1-uidesign-image {
     width: 70vh;
     border-radius: 10%;
+    transition: transform 0.5s ease;
   }
-  #project1-firstversion-image {
+  #project1-mvp-image {
     width: 70vh;
     border-radius: 8%;
+    transition: transform 0.5s ease;
+  }
+  #project1-database-image {
+    width: 60vh;
+    border-radius: 8%;
+    transition: transform 0.5s ease;
+  }
+  #project2-responsive-image {
+    width: 40vh;
+    border-radius: 8%;
+    transition: transform 0.5s ease;
+  }
+  #project2-css-image {
+    width: 60vh;
+    border-radius: 8%;
+    transition: transform 0.5s ease;
+  }
+  .image-containers img:hover {
+    transform: scale(1.2);
   }
   .image-labels {
     font-size: 3em;
     width: 30%;
   }
 
-  /*   
-   .cubes {
-    display: block;
-
-    margin-top: 25px;
-
-    height: 700px;
-  }
-  .cuberow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-
-    align-self: center;
-  }
-  .cubecolumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  #ios15, 
-   #watchos8,
-  #ipados15,
-  #macos {
-    margin-top: 25px;
-    width: 48%;
-    height: 470px;
-  }
-
-  #ios15 {
-    background: url(ios15.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  #watchos8 {
-    background: url(watchos8.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  #ipados15 {
-    background: url(ipados15.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  #macos {
-    background: url(macos.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  #ios15 p,
-  #watchos8 p,
-  #ipados15 p,
-  #macos p {
-    font-size: 20px;
-    text-align: center;
-    width: 80%;
-    display: inline-block;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  #ios15 a,
-  #watchos8 a,
-  #ipados15 a,
-  #macos a {
-    text-decoration: none;
-    color: rgb(68, 163, 223);
-  }
-  #ios15 h2,
-  #watchos8 h2,
-  #ipados15 h2,
-  #macos h2 {
-    font-size: 2em;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    color: black;
-    font-weight: 500;
-  }
-} */
   #footer {
     display: flex;
 
@@ -485,5 +372,8 @@ body {
     color: black;
     font-weight: 600;
     text-decoration: none;
+  }
+  #footer a {
+    color: black;
   }
 }
