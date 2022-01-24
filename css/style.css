@@ -577,3 +577,36 @@ body {
     justify-self: center;
   }
 }
+@media screen and (min-width: 800px) {
+  #project1-hero-image {
+    width: 25vw;
+    height: 750px;
+  }
+
+  #project1-wireframe-image {
+    width: 35vw;
+  }
+  #project1-uidesign-image {
+    width: 30vw;
+    height: 600px;
+  }
+  #project1-database-image {
+    width: 30vw;
+    height: 600px;
+  }
+  #project1-mvp-image {
+    width: 30vw;
+    height: 600px;
+  }
+  #project2-hero-image {
+    overflow: hidden;
+    width: 65vw;
+  }
+  #project2-responsive-image {
+    width: 20vw;
+    height: 700px;
+  }
+  #project2-css-image {
+    width: 35vw;
+  }
+}
